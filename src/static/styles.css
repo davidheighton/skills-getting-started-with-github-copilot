@@ -59,19 +59,86 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px 16px;
+  border: 1px solid #dfe7f5;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+  box-shadow: 0 4px 12px rgba(26, 35, 126, 0.08);
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
-  color: #0066cc;
+  color: #1a237e;
+  font-size: 1.2rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+  color: #3d4a5a;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e7ff;
+}
+
+.participants-section strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #1a237e;
+}
+
+.participants-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #364152;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  background: #eef3ff;
+  line-height: 1.4;
+}
+
+.participant-item.empty {
+  display: block;
+  background: transparent;
+  color: #667085;
+  padding-left: 0;
+}
+
+.participant-email {
+  flex: 1;
+  word-break: break-word;
+}
+
+.delete-participant-btn {
+  border: none;
+  border-radius: 999px;
+  background: #ffebee;
+  color: #c62828;
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.delete-participant-btn:hover {
+  background: #ffcdd2;
+  transform: scale(1.04);
 }
 
 .form-group {
